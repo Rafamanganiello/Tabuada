@@ -1,14 +1,12 @@
 body{
     margin: 0%;
+    background-color: bisque;
 }
 
 #conteiner{
-    background-color: bisque;
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100%;
-    height: 100%;
 }
 
 
