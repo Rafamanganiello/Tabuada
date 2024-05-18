@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabuada</title>
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="conteiner">
+        <h1>Tabuada do Rafa</h1>
+        <section>
+            <label for="" class="marcador">Insira o numero a ser multiplicado</label> <br>
+            <input type="number" class="entry" id="primeiro-nb"> <br>
+            <label for="">Insira o multiplicador</label> <br>
+            <input type="number" class="entry" id="segundo-nb"> <br>
+            <input type="button" id="botao" value="Calcular" onclick="tabuada()">
+            <div id="resposta"></div>
+        </section>
+    </div>
+
+    <script>
+        function tabuada(){
+            
+                var num1 = window.document.getElementById('primeiro-nb')
+                var num2 = window.document.getElementById('segundo-nb')
+                if (num1.value == 0 || num2.value == 0){
+                    window.alert('Verifique o numero inserido')
+                } else{
+                var n1 = Number(num1.value)
+                var n2 = Number(num2.value)
+                var x = 0
+                var r = ''
+                var res = window.document.getElementById('resposta')
+                res.innerHTML = `A tabuada do ${n1} é: <br>`
+                do {
+                    r = n1*x
+                    res.innerHTML += `${x} x ${n1} = ${r} <br>`
+                    x++
+                } while(x <= n2)
+            }
+        }
+    </script>
+</body>
+</html>
