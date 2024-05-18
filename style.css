@@ -1,63 +1,61 @@
-body{
+body {
     margin: 0%;
-    background-color: bisque;
+    background-color: #1e1e1e; 
+    font-family: "Poppins", sans-serif; 
 }
 
-#conteiner{
+#conteiner {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 130px;
 }
 
-
-section{
+section {
     margin: 40px 0 100px 0;
-    padding: 70px;
-    border-radius: 50px;
-    background-color: lightblue;
+    padding: 40px; 
+    border-radius: 10px; 
+    background-color: #f0f0f0; 
     text-align: center;
-
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); 
 }
- #conteiner h1{
-    padding: 0%;
-    margin-top: 50px;
-    font-family: poppins;
-    text-transform: uppercase;
- }
 
-#botao{
-    color: azure;
-    margin: 15px 0 15px 0;
+h1 {
+    margin: 50px 0; 
+    font-weight: 700; 
+    text-transform: uppercase;
+    color: #f0f0f0; 
+}
+
+#botao {
+    color: #f0f0f0; 
+    margin: 15px 0;
     background-color: #303030;
     border: none;
     width: 90px;
     height: 30px;
     border-radius: 5px;
     cursor: pointer;
+    transition: background-color 0.3s, color 0.3s; 
 }
 
-#botao:hover{
-
-    background-color: lightgreen;
-    color: black;
-    
+#botao:hover {
+    background-color: #4caf50; 
+    color: #000; 
 }
 
-.entry{
-
+.entry {
     margin-top: 10px;
     margin-bottom: 10px;
-}
-    
-label{
-    font-family: poppins;
-    font-weight: 600;
-} 
-
-.entry{
-
-    border: none;
+    border: 1px solid #303030; 
     border-radius: 8px;
     height: 25px;
-    box-shadow: 2px 3px 2px white;
+    padding: 0 10px; 
+    box-sizing: border-box; 
 }
+
+label {
+    font-weight: 600;
+    color: #303030;
+}
+
